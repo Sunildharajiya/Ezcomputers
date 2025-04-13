@@ -1,9 +1,8 @@
-let blogs = document.querySelector(".blogs")
+
 let searchbar = document.querySelector("#search");
 let productCards = document.querySelectorAll(".device-card");
 
 searchbar.addEventListener("input", (e) => {
-  blogs.style.display = "none"
   let value = e.target.value.toLowerCase();
 
   productCards.forEach((card) => {
@@ -16,3 +15,5 @@ searchbar.addEventListener("input", (e) => {
     }
   });
 });
+
+
